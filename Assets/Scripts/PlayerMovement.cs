@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+  [SerializeField] private float speed;
   private Rigidbody2D body;
 
   private void Awake()
@@ -11,6 +12,17 @@ public class PlayerMovement : MonoBehaviour
 
   private void Update()
   {
-    body.velocity = new Vector2(Input.GetAxis("Horizontal"), body.velocity.y);
+    float horizontalInput = Input.GetAxis("Horizontal");
+    body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
+
+    // Face sprite left/right
+    if (horizontalInput > 0.01f)
+      transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+    else if (horizontalInput < -0.01f)
+      transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
+
+    // Jumping
+    if (Input.GetKey(KeyCode.Space))
+      body.velocity = new Vector2(body.velocity.x, speed);
   }
 }
