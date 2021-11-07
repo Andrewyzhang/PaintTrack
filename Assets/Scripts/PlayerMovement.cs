@@ -1,28 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-  [SerializeField] private float speed;
-  private Rigidbody2D body;
+    
+    public CharacterController2D controller;
+    
+    public float runSpeed = 40f;
+    
+    bool jump = false;
+    
+    float horizontalM = 0f;
+    
+    
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
-  private void Awake()
-  {
-    body = GetComponent<Rigidbody2D>();
-  }
-
-  private void Update()
-  {
-    float horizontalInput = Input.GetAxis("Horizontal");
-    body.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, body.velocity.y);
-
-    // Face sprite left/right
-    if (horizontalInput > 0.01f)
-      transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-    else if (horizontalInput < -0.01f)
-      transform.localScale = new Vector3(-0.5f, 0.5f, 0.5f);
-
-    // Jumping
-    if (Input.GetKey(KeyCode.Space))
-      body.velocity = new Vector2(body.velocity.x, speed);
-  }
+    // Update is called once per frame
+    void Update()
+    {
+        
+        horizontalM = Input.GetAxisRaw("Horizontal") * runSpeed;
+        
+        if (Input.GetButtonDown("Jump")) {
+            jump = true;
+        }
+        
+        
+    }
+    
+    
+    void FixedUpdate(){
+        controller.Move(horizontalM * Time.fixedDeltaTime, false, jump);
+        jump = false;
+    }
 }
