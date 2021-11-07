@@ -19,7 +19,7 @@ public class SwitchCubes : MonoBehaviour
         
     }
 
-    void SwitchCube()
+    public void SwitchCube()
     {
         switch (whichCubeIsOn)
         {
