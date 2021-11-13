@@ -7,11 +7,13 @@ public class SwitchCubes : MonoBehaviour
     public GameObject Player;
     public GameObject blueCube, redCube;
     int whichCubeIsOn = 1;
+    public static string playerColor;
     // Start is called before the first frame update
     void Start()
     {
         blueCube.gameObject.SetActive(true);
         redCube.gameObject.SetActive(false);
+        playerColor = "blue";
         Player.layer = 9;
     }
 
@@ -38,6 +40,7 @@ public class SwitchCubes : MonoBehaviour
                 // disable blue one and enable red
                 blueCube.gameObject.SetActive(false);
                 redCube.gameObject.SetActive(true);
+                playerColor = "red";
                 Player.layer = 8;
                 break;
 
@@ -48,6 +51,7 @@ public class SwitchCubes : MonoBehaviour
                 // disable blue one and enable red
                 blueCube.gameObject.SetActive(true);
                 redCube.gameObject.SetActive(false);
+                playerColor = "blue";
                 Player.layer = 9;
                 break;
         }

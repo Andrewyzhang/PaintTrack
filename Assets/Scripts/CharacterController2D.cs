@@ -143,4 +143,18 @@ public class CharacterController2D : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+	// void Update() {
+		//red is 6 layer, blue is 7
+		// Debug.Log(m_WhatIsGround.value);
+		// Debug.Log(m_WhatIsGround.GetMask("Blue Platforms", "Red Platforms").value);
+		// if (SwitchCubes.playerColor == "blue") {
+			// LayerMask red = m_WhatIsGround.GetMask([LayerMask.LayerToName(6)]);
+			// LayerMask blue = m_WhatIsGround.GetMask([LayerMask.LayerToName(7)]);
+			// m_WhatIsGround = m_WhatIsGround & ~red;
+			// m_WhatIsGround = m_WhatIsGround | blue;
+			// int red_layer = m_WhatIsGround.NameToLayer("Red Platforms");
+			// int blue_layer = m_WhatIsGround.NameToLayer("Blue Platforms");
+		// }
+	// }
 }
