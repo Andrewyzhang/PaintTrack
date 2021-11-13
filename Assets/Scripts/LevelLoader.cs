@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class LevelLoader : MonoBehaviour
 {
   public Animator transition;
   public float transitionTime = 1f;
-  public void PlayGame()
+  void Update()
+  {
+    if (Input.GetMouseButtonDown(0))
+    {
+      LoadNextLevel();
+    }
+
+  }
+
+  public void LoadNextLevel()
   {
     StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
   }
