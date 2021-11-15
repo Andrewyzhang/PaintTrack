@@ -2484,7 +2484,7 @@ GameObject:
   - component: {fileID: 1311807688}
   - component: {fileID: 1311807687}
   - component: {fileID: 1311807686}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3662,7 +3662,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 2240
   m_GroundCheck: {fileID: 374096656}
   m_CeilingCheck: {fileID: 1353894209}
   m_CrouchDisableCollider: {fileID: 0}
