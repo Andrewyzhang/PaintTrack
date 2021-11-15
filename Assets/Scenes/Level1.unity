@@ -3662,7 +3662,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 2240
+    m_Bits: 2048
   m_WhatIsGroundBlue:
     serializedVersion: 2
     m_Bits: 128
