@@ -34,7 +34,7 @@ public class SwitchCubes : MonoBehaviour
             // if blue is on
             case 1:
 
-                // then red is on now
+                // the red is on 
                 whichCubeIsOn = 2;
 
                 // disable blue one and enable red
@@ -46,9 +46,10 @@ public class SwitchCubes : MonoBehaviour
 
             // if red is on
             case 2:
+				// the blue is on 
                 whichCubeIsOn = 1;
 
-                // disable blue one and enable red
+                // disable red one and enable blue
                 blueCube.gameObject.SetActive(true);
                 redCube.gameObject.SetActive(false);
                 playerColor = "blue";
