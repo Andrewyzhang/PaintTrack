@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ParallBackground : MonoBehaviour
 {
-    [SerializeField] private float EffectMultiplier;
+    [SerializeField] private Vector2 EffectMultiplier;
     private Transform cameraTransform;
     private Vector3 lastCameraPosition;
 
@@ -17,7 +17,8 @@ public class ParallBackground : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
-        transform.position += deltaMovement * EffectMultiplier;
+        transform.position += new Vector3(deltaMovement.x * EffectMultiplier.x,
+            deltaMovement.y * EffectMultiplier.y);
         lastCameraPosition = cameraTransform.position;
     }
 
