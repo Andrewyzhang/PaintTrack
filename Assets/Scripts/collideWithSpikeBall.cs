@@ -8,7 +8,7 @@ public class collideWithSpikeBall : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision){
          if(collision.gameObject.tag == "spikyBall" ){
-             player.transform.position = new Vector2 (0, 0);
+             player.transform.position = GameHandler.respawnPoint;
        }
      }
 

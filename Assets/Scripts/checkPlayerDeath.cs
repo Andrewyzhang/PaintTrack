@@ -12,7 +12,7 @@ public class checkPlayerDeath : MonoBehaviour
     //check if character fell into the void
     if(player.transform.position.y < -10)
     {
-        player.transform.position = new Vector2 (0, 0);
+        player.transform.position = GameHandler.respawnPoint;
     }
 }
 }
