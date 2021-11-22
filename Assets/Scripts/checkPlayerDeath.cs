@@ -13,6 +13,7 @@ public class checkPlayerDeath : MonoBehaviour
     if(player.transform.position.y < -10)
     {
         player.transform.position = GameHandler.respawnPoint;
+        GameHandler.lives--;
     }
 }
 }
