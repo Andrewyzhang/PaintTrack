@@ -6,6 +6,8 @@ public class SwitchCubes : MonoBehaviour
 {
     public GameObject Player;
     public GameObject blueCube, redCube;
+    public ParticleSystem redParticles, blueParticles;
+
     int whichCubeIsOn = 1;
     public static string playerColor;
     // Start is called before the first frame update
@@ -34,7 +36,10 @@ public class SwitchCubes : MonoBehaviour
             // if blue is on
             case 1:
 
-                // the red is on 
+                //Particles
+                blueParticles.Play();
+
+                // the red is on
                 whichCubeIsOn = 2;
 
                 // disable blue one and enable red
@@ -46,7 +51,11 @@ public class SwitchCubes : MonoBehaviour
 
             // if red is on
             case 2:
-				// the blue is on 
+				// the blue is on
+
+                //Particles
+                redParticles.Play();
+
                 whichCubeIsOn = 1;
 
                 // disable red one and enable blue
