@@ -9654,7 +9654,6 @@ GameObject:
   - component: {fileID: 6624000908983073872}
   - component: {fileID: 6624000908983073873}
   - component: {fileID: 6624000908983073886}
-  - component: {fileID: 6624000908983073887}
   - component: {fileID: 6624000908983073884}
   - component: {fileID: 6624000908983073885}
   - component: {fileID: 6624000908983073882}
@@ -9787,25 +9786,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!95 &6624000908983073887
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6624000908983073862}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a2281bf4e450747598983d8deadd897a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &6624000908983073884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9919,6 +9899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6624000909691706109}
   - component: {fileID: 6624000909691706108}
+  - component: {fileID: 825483013}
   m_Layer: 0
   m_Name: blue_cube
   m_TagString: Untagged
@@ -9992,6 +9973,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &825483013
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624000909691706106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9450f9540d839c6458b75bd1058645f0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6624000909944495858
 GameObject:
   m_ObjectHideFlags: 0
@@ -10002,6 +10002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6624000909944495861}
   - component: {fileID: 6624000909944495860}
+  - component: {fileID: 1161019990}
   m_Layer: 0
   m_Name: red_cube
   m_TagString: Untagged
@@ -10075,6 +10076,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1161019990
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624000909944495858}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4075d0e03e3ba5458b413a410aec4da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6624000909958649171
 GameObject:
   m_ObjectHideFlags: 0

@@ -499,7 +499,7 @@ Transform:
   - {fileID: 728087550}
   - {fileID: 1792219476}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &235214122
 GameObject:
@@ -623,6 +623,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 1108475964}
   transitionTime: 1
+--- !u!4 &291470064 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6624000908974565705, guid: e49db093841f546cc98db79262c8002a, type: 3}
+  m_PrefabInstance: {fileID: 2002832609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &312522071
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,7 +3006,7 @@ Transform:
   m_LocalScale: {x: 8.651005, y: 23.68667, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1151079885 stripped
 GameObject:
@@ -6309,7 +6314,7 @@ PrefabInstance:
     - target: {fileID: 8867630792687280002, guid: 5720ac31e57e13a468d974779a71ebd2, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 291470064}
     - target: {fileID: 8867630792687280003, guid: 5720ac31e57e13a468d974779a71ebd2, type: 3}
       propertyPath: levels.Array.data[0]
       value: 
