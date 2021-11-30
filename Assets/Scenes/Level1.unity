@@ -3367,7 +3367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85143a05c10964843bfd644e74ab9e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 10
   moveTargetA: {fileID: 2084084213}
   moveTargetB: {fileID: 1455925654}
 --- !u!50 &1300144541
@@ -5329,6 +5329,10 @@ PrefabInstance:
     - target: {fileID: 6624000908983073862, guid: e49db093841f546cc98db79262c8002a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6624000908983073885, guid: e49db093841f546cc98db79262c8002a, type: 3}
+      propertyPath: jumpCooldown
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49db093841f546cc98db79262c8002a, type: 3}

@@ -8,9 +8,11 @@ public class PlayerMovement : MonoBehaviour
   public CharacterController2D controller;
 
   public float runSpeed = 40f;
-
+  public float jumpCooldown = 0.1f;
+  private float nextJump = 0;
+  
   bool jump = false;
-
+  
   float horizontalM = 0f;
 
 
@@ -28,14 +30,16 @@ public class PlayerMovement : MonoBehaviour
   {
 
     horizontalM = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-    if (Input.GetButtonDown("Jump"))
-    {
-      if (!jump)
-        FindObjectOfType<AudioManager>().Play("Jump", true);
-
-      jump = true;
-    }
+    
+    if (Time.time > nextJump){
+        if (Input.GetButtonDown("Jump"))
+        {
+            
+          jump = true;
+          nextJump = Time.time + jumpCooldown;
+        }
+    } 
+    
 
 
   }
