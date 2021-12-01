@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class checkpoint : MonoBehaviour
 {
 
-    private Animator anim;
+    public Animator anim;
 
     void Start() {
       anim = GetComponent<Animator>();
