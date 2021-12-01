@@ -6,13 +6,12 @@ using UnityEngine.UI;
 public class checkpoint : MonoBehaviour
 {
 
-    // void OnCollisionEnter2D(Collision2D collision){
-    //      if(collision.gameObject.tag == "checkpoint" ){
-    //          GameHandler.respawnPoint = checkpoint.transform.position;
-    //          GameHandler.respawnPoint = new Vector2(0,1000);
-    //          transform.position = new Vector2(0,0);
-    //    }
-    //  }
+    private Animator anim;
+
+    void Start() {
+      anim = GetComponent<Animator>();
+      anim.enabled = false;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,6 +24,10 @@ public class checkpoint : MonoBehaviour
           // Update the _respawnPoint varaible in GameManager
           GameHandler.respawnPoint = pointupdate;
 
+          anim.enabled = true;
+
+          // anim.Play("checkpointReached");
+          // anim.Play("checkpointWaving");
         }
       }
 
