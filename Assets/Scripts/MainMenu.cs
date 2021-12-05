@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
   IEnumerator LoadLevel(int levelIndex)
   {
     transition.SetTrigger("FadeOut");
+    GameHandler.respawnPoint = new Vector2(0,5);
 
     yield return new WaitForSeconds(transitionTime);
 
