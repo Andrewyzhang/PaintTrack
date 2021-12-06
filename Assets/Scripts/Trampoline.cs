@@ -5,7 +5,7 @@ using UnityEngine;
 public class Trampoline : MonoBehaviour
 {
 
-    private float bounce = 20f;
+    public float bounce = 20f;
 
     private void OnCollisionEnter2D(Collision2D collision) {
       if (collision.gameObject.CompareTag("Player")) {

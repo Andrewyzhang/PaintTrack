@@ -4819,7 +4819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85143a05c10964843bfd644e74ab9e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 7
   moveTargetA: {fileID: 2084084213}
   moveTargetB: {fileID: 1455925654}
 --- !u!50 &1300144541
