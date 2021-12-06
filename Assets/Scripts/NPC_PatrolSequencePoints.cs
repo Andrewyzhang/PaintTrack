@@ -12,6 +12,7 @@ public class NPC_PatrolSequencePoints : MonoBehaviour {
        private int nextSpot;
        public int startSpot = 0;
        public bool moveForward = true;
+       public bool reverses = true;
 
        void Start(){
               // waitTime = startWaitTime;
@@ -23,7 +24,12 @@ public class NPC_PatrolSequencePoints : MonoBehaviour {
 
               if (Vector2.Distance(transform.position, moveSpots[nextSpot].position) < 0.2f){
                      // if (waitTime <= 0){
-                            if (moveForward == true){nextSpot += 1;}
+                            if (moveForward == true || reverses == false){
+                                nextSpot += 1;
+                                if (nextSpot == (moveSpots.Length)) {
+                                    nextSpot = 0;
+                                }
+                            }
                             else if (moveForward == false){nextSpot -= 1;}
                      //        waitTime = startWaitTime;
                      // } else {
