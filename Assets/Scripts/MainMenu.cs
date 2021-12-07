@@ -14,12 +14,14 @@ public class MainMenu : MonoBehaviour
 
   IEnumerator LoadLevel(int levelIndex)
   {
+    FindObjectOfType<AudioManager>().Stop("Theme");
     transition.SetTrigger("FadeOut");
-    GameHandler.respawnPoint = new Vector2(0,5);
+    GameHandler.respawnPoint = new Vector2(0, 5);
 
     yield return new WaitForSeconds(transitionTime);
 
     SceneManager.LoadScene(levelIndex);
+    FindObjectOfType<AudioManager>().Play("Theme", false);
   }
 
 }

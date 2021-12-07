@@ -44,9 +44,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0.1
+  - name: Jump
+    clip: {fileID: 8300000, guid: f7c670f48244247a296a34ff6c277401, type: 3}
+    volume: 1
+    pitch: 1.47
     loop: 0
     source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: ae173c6dfec26457e8deda29393988b8, type: 3}
+    volume: 0.3
+    pitch: 1.3
+    loop: 1
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: efd3f2ca97c24461680d8e7d968d9fe9, type: 3}
+    volume: 0.6
+    pitch: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Complete
+    clip: {fileID: 8300000, guid: 882b9896634f543e68d48e035a33d9b7, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  minPitchValue: 0.7
+  maxPitchValue: 1.3
+  minVolumeValue: 0.8
+  maxVolumeValue: 1

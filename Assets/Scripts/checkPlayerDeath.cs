@@ -5,15 +5,16 @@ using UnityEngine;
 public class checkPlayerDeath : MonoBehaviour
 {
 
-    public GameObject player;
+  public GameObject player;
 
-    void Update ()
-    {
+  void Update()
+  {
     //check if character fell into the void
-    if(player.transform.position.y < -10)
+    if (player.transform.position.y < -10)
     {
-        player.transform.position = GameHandler.respawnPoint;
-        GameHandler.lives--;
+      FindObjectOfType<AudioManager>().Play("Death", false);
+      player.transform.position = GameHandler.respawnPoint;
+      GameHandler.lives--;
     }
-}
+  }
 }
