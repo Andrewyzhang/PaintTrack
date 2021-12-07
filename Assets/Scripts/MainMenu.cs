@@ -10,6 +10,12 @@ public class MainMenu : MonoBehaviour
   public void PlayGame()
   {
     StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+    FindObjectOfType<AudioManager>().Play("Start", false);
+  }
+
+  public void NextLevel()
+  {
+    StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
   }
 
   IEnumerator LoadLevel(int levelIndex)
