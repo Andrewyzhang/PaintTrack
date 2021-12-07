@@ -74,6 +74,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Switch
+    clip: {fileID: 8300000, guid: a037fad08370742988aa6b1b30493a16, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   minPitchValue: 0.7
   maxPitchValue: 1.3
   minVolumeValue: 0.8
