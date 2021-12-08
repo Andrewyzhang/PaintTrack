@@ -22,6 +22,9 @@ public class CharacterController2D : MonoBehaviour
   private Rigidbody2D m_Rigidbody2D;
   private bool m_FacingRight = true;  // For determining which way the player is currently facing.
   private Vector3 m_Velocity = Vector3.zero;
+  
+  public float coyoteTime = 0.15f;
+  private float coyoteTimeCounter;
 
   [Header("Events")]
   [Space]
@@ -146,11 +149,22 @@ public class CharacterController2D : MonoBehaviour
         Flip();
       }
     }
+    
+    //adding coyote time
+    if (m_Grounded){
+        coyoteTimeCounter = coyoteTime;
+    }
+    else {
+        coyoteTimeCounter -= Time.deltaTime;
+    }
+    
+    
     // If the player should jump...
-    if (m_Grounded && jump)
+    if ((coyoteTimeCounter > 0f) && jump)
     {
       // Add a vertical force to the player.
       m_Grounded = false;
+      coyoteTimeCounter = 0;
       m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
       FindObjectOfType<AudioManager>().Play("Jump", true);
     }
