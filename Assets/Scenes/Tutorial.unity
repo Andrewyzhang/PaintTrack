@@ -867,6 +867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5720ac31e57e13a468d974779a71ebd2, type: 3}
+--- !u!20 &342606099 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8867630792687280000, guid: 5720ac31e57e13a468d974779a71ebd2, type: 3}
+  m_PrefabInstance: {fileID: 342606098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &369290868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,6 +2283,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6624000908983073881, guid: e49db093841f546cc98db79262c8002a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 342606099}
+    - target: {fileID: 6624000908983073883, guid: e49db093841f546cc98db79262c8002a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 342606099}
     - target: {fileID: 6624000908983073884, guid: e49db093841f546cc98db79262c8002a, type: 3}
       propertyPath: coyoteTime
       value: 0.15
