@@ -7,6 +7,11 @@ public class MainMenu : MonoBehaviour
 {
   public Animator transition;
   public float transitionTime = 1f;
+
+  public void SelectLevel(string levelScene)
+  {
+        SceneManager.LoadScene(levelScene);
+  }
   public void PlayGame()
   {
     StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
