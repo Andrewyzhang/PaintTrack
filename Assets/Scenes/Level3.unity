@@ -2412,14 +2412,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6624000908983073884, guid: e49db093841f546cc98db79262c8002a, type: 3}
-      propertyPath: coyoteTime
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6624000908983073885, guid: e49db093841f546cc98db79262c8002a, type: 3}
-      propertyPath: jumpCooldown
-      value: 0.3
-      objectReference: {fileID: 0}
+    - target: {fileID: 6624000908983073881, guid: e49db093841f546cc98db79262c8002a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 953461174}
+    - target: {fileID: 6624000908983073883, guid: e49db093841f546cc98db79262c8002a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 953461174}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49db093841f546cc98db79262c8002a, type: 3}
 --- !u!4 &256037799 stripped
@@ -7539,6 +7539,11 @@ Transform:
   m_Father: {fileID: 2102016379}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &953461174 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8867630792687280000, guid: 5720ac31e57e13a468d974779a71ebd2, type: 3}
+  m_PrefabInstance: {fileID: 310255947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &959582790
 GameObject:
   m_ObjectHideFlags: 0
@@ -15184,6 +15189,10 @@ PrefabInstance:
     - target: {fileID: 775321750042296240, guid: a502e0d4d51244be7acb7f3b837f6cf1, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 775321750042296240, guid: a502e0d4d51244be7acb7f3b837f6cf1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 775321750437737850, guid: a502e0d4d51244be7acb7f3b837f6cf1, type: 3}
       propertyPath: m_Enabled

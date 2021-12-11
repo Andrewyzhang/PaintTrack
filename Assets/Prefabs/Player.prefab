@@ -9814,6 +9814,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 6624000909958649170}
   m_CeilingCheck: {fileID: 6624000908120762339}
   m_CrouchDisableCollider: {fileID: 0}
+  coyoteTime: 0.15
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -9834,6 +9835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 6624000908983073884}
   runSpeed: 40
+  jumpCooldown: 0.3
 --- !u!114 &6624000908983073882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9864,6 +9866,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6624000908983073862}
+  shakeMagnetude: 0.2
+  shakeTime: 0.6
+  mainCamera: {fileID: 0}
 --- !u!114 &6624000908983073880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9876,6 +9881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b73bbb6596b5f1246b5ce81e265d0f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!114 &6624000908983073881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9889,6 +9895,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6624000908983073862}
+  shakeMagnetude: 0.2
+  shakeTime: 0.6
+  mainCamera: {fileID: 0}
 --- !u!1 &6624000909691706106
 GameObject:
   m_ObjectHideFlags: 0

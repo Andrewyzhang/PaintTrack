@@ -7264,6 +7264,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6624000908983073881, guid: e49db093841f546cc98db79262c8002a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 8867630792984990461}
+    - target: {fileID: 6624000908983073883, guid: e49db093841f546cc98db79262c8002a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 8867630792984990461}
     - target: {fileID: 6624000908983073884, guid: e49db093841f546cc98db79262c8002a, type: 3}
       propertyPath: coyoteTime
       value: 0.15
@@ -8249,6 +8257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5720ac31e57e13a468d974779a71ebd2, type: 3}
+--- !u!20 &8867630792984990461 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8867630792687280000, guid: 5720ac31e57e13a468d974779a71ebd2, type: 3}
+  m_PrefabInstance: {fileID: 8867630792984990460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9101280450607884316
 PrefabInstance:
   m_ObjectHideFlags: 0
