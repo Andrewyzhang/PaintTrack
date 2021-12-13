@@ -82,13 +82,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Checkpoint
     clip: {fileID: 8300000, guid: 2dc7024c0aa16420f8dbd88cbfdd14d5, type: 3}
-    volume: 0.75
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Post
     clip: {fileID: 8300000, guid: 442d690c2add44465b11b9fbfde61c30, type: 3}
-    volume: 0.75
+    volume: 0.1
     pitch: 1
     loop: 1
     source: {fileID: 0}

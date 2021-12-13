@@ -22,7 +22,7 @@ public class FinishLine : MonoBehaviour
 
   IEnumerator delay()
   {
-    yield return new WaitForSeconds(2f);
+    yield return new WaitForSeconds(1.5f);
     FindObjectOfType<AudioManager>().Play("Post", false);
   }
 }
