@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
 
   public void NextLevel()
   {
+    FindObjectOfType<AudioManager>().Play("Next", false);
     FindObjectOfType<AudioManager>().Stop("Post");
     StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
   }

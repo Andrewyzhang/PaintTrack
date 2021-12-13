@@ -64,7 +64,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Complete
     clip: {fileID: 8300000, guid: 882b9896634f543e68d48e035a33d9b7, type: 3}
-    volume: 0.75
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -91,6 +91,12 @@ MonoBehaviour:
     volume: 0.1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Next
+    clip: {fileID: 8300000, guid: 909340bcac751435a8f4b374a1050412, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
   minPitchValue: 0.7
   maxPitchValue: 1.3
