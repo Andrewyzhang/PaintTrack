@@ -17,6 +17,8 @@ public class AudioManager : MonoBehaviour
   public float minVolumeValue;
   public float maxVolumeValue;
 
+  private float musicVolume = 0.3f;
+
   // Start is called before the first frame update
   void Awake()
   {
@@ -71,6 +73,11 @@ public class AudioManager : MonoBehaviour
       return;
     }
     s.source.Stop();
+  }
+
+  public void SetVolume(float vol)
+  {
+    musicVolume = vol;
   }
 
   private void RandomizeSound(Sound s)

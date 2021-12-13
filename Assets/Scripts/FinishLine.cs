@@ -9,9 +9,20 @@ public class FinishLine : MonoBehaviour
   {
     if (collision.gameObject.tag == "Player")
     {
-      FindObjectOfType<AudioManager>().Play("Complete", false);
-      FindObjectOfType<AudioManager>().Stop("Theme");
+      if (!Endscrn.activeSelf)
+      {
+        FindObjectOfType<AudioManager>().Play("Complete", false);
+        FindObjectOfType<AudioManager>().Stop("Theme");
+
+        StartCoroutine(delay());
+      }
       Endscrn.gameObject.SetActive(true);
     }
+  }
+
+  IEnumerator delay()
+  {
+    yield return new WaitForSeconds(2f);
+    FindObjectOfType<AudioManager>().Play("Post", false);
   }
 }

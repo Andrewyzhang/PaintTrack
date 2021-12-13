@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
 
   public void SelectLevel(string levelScene)
   {
-        SceneManager.LoadScene(levelScene);
+    SceneManager.LoadScene(levelScene);
   }
   public void PlayGame()
   {
@@ -20,6 +20,7 @@ public class MainMenu : MonoBehaviour
 
   public void NextLevel()
   {
+    FindObjectOfType<AudioManager>().Stop("Post");
     StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
   }
 
