@@ -2048,7 +2048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 775321750042296240, guid: a502e0d4d51244be7acb7f3b837f6cf1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 775321750046855649, guid: a502e0d4d51244be7acb7f3b837f6cf1, type: 3}
       propertyPath: m_IsActive
@@ -6063,13 +6063,5 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 482647872}
-    - target: {fileID: 6624000908983073884, guid: e49db093841f546cc98db79262c8002a, type: 3}
-      propertyPath: coyoteTime
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6624000908983073885, guid: e49db093841f546cc98db79262c8002a, type: 3}
-      propertyPath: jumpCooldown
-      value: 0.3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e49db093841f546cc98db79262c8002a, type: 3}

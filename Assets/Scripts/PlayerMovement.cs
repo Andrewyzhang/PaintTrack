@@ -39,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
           jump = true;
+          animator.SetBool("jumping", true);
           nextJump = Time.time + jumpCooldown;
         }
     }
@@ -52,5 +53,6 @@ public class PlayerMovement : MonoBehaviour
   {
     controller.Move(horizontalM * Time.fixedDeltaTime, false, jump);
     jump = false;
+    animator.SetBool("jumping", false);
   }
 }
