@@ -6,13 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
 
   public CharacterController2D controller;
+  public Animator animator;
 
   public float runSpeed = 40f;
   public float jumpCooldown = 0.1f;
   private float nextJump = 0;
-  
+
   bool jump = false;
-  
+
   float horizontalM = 0f;
 
 
@@ -30,16 +31,18 @@ public class PlayerMovement : MonoBehaviour
   {
 
     horizontalM = Input.GetAxisRaw("Horizontal") * runSpeed;
-    
+
+    animator.SetFloat("speed", Mathf.Abs(horizontalM));
+
     if (Time.time > nextJump){
         if (Input.GetButtonDown("Jump"))
         {
-            
+
           jump = true;
           nextJump = Time.time + jumpCooldown;
         }
-    } 
-    
+    }
+
 
 
   }

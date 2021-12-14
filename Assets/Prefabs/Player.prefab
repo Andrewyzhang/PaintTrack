@@ -9655,7 +9655,6 @@ GameObject:
   - component: {fileID: 6624000908983073873}
   - component: {fileID: 6624000908983073886}
   - component: {fileID: 6624000908983073884}
-  - component: {fileID: 6624000908983073885}
   - component: {fileID: 6624000908983073882}
   - component: {fileID: 6624000908983073883}
   - component: {fileID: 6624000908983073880}
@@ -9821,21 +9820,6 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6624000908983073885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6624000908983073862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8cb61eca59742f99824e8fa4b7af11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 6624000908983073884}
-  runSpeed: 40
-  jumpCooldown: 0.3
 --- !u!114 &6624000908983073882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9909,6 +9893,7 @@ GameObject:
   - component: {fileID: 6624000909691706109}
   - component: {fileID: 6624000909691706108}
   - component: {fileID: 825483013}
+  - component: {fileID: 802448908}
   m_Layer: 0
   m_Name: blue_cube
   m_TagString: Untagged
@@ -10001,6 +9986,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &802448908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624000909691706106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8cb61eca59742f99824e8fa4b7af11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 6624000908983073884}
+  animator: {fileID: 825483013}
+  runSpeed: 40
+  jumpCooldown: 0.1
 --- !u!1 &6624000909944495858
 GameObject:
   m_ObjectHideFlags: 0
@@ -10012,6 +10013,7 @@ GameObject:
   - component: {fileID: 6624000909944495861}
   - component: {fileID: 6624000909944495860}
   - component: {fileID: 1161019990}
+  - component: {fileID: 22989173}
   m_Layer: 0
   m_Name: red_cube
   m_TagString: Untagged
@@ -10104,6 +10106,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &22989173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624000909944495858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8cb61eca59742f99824e8fa4b7af11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 6624000908983073884}
+  animator: {fileID: 1161019990}
+  runSpeed: 40
+  jumpCooldown: 0.1
 --- !u!1 &6624000909958649171
 GameObject:
   m_ObjectHideFlags: 0
