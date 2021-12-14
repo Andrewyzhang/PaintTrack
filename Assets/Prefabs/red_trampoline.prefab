@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 385559147304082130}
   - component: {fileID: 385559147304082157}
   - component: {fileID: 385559147304082156}
-  m_Layer: 6
+  m_Layer: 12
   m_Name: red_trampoline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,3 +123,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9b6e855e9765a4a8aeaee0ebdb0088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bounce: 30
