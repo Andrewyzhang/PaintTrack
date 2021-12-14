@@ -2822,10 +2822,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1414112619612251660, guid: ae34cf543458b0145969dec1727c715c, type: 3}
-      propertyPath: bounce
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 1414112619612251661, guid: ae34cf543458b0145969dec1727c715c, type: 3}
       propertyPath: m_Name
       value: blue_trampoline (1)
@@ -15208,7 +15204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 775321750042296240, guid: a502e0d4d51244be7acb7f3b837f6cf1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 775321750437737850, guid: a502e0d4d51244be7acb7f3b837f6cf1, type: 3}
       propertyPath: m_Enabled
