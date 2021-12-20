@@ -26,6 +26,9 @@ public class CharacterController2D : MonoBehaviour
   public float coyoteTime = 0.15f;
   private float coyoteTimeCounter;
 
+  public float jumpCooldown = 0.3f;
+  private float nextJump = 0;
+
   [Header("Events")]
   [Space]
 
@@ -160,13 +163,14 @@ public class CharacterController2D : MonoBehaviour
     
     
     // If the player should jump...
-    if ((coyoteTimeCounter > 0f) && jump)
+    if ((coyoteTimeCounter > 0f) && jump && (Time.time > nextJump))
     {
       // Add a vertical force to the player.
       m_Grounded = false;
       coyoteTimeCounter = 0;
       m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
       FindObjectOfType<AudioManager>().Play("Jump", true);
+      nextJump = Time.time + jumpCooldown;
     }
   }
 

@@ -9,8 +9,6 @@ public class PlayerMovement : MonoBehaviour
   public Animator animator;
 
   public float runSpeed = 40f;
-  public float jumpCooldown = 0.1f;
-  private float nextJump = 0;
 
   bool jump = false;
 
@@ -34,14 +32,10 @@ public class PlayerMovement : MonoBehaviour
 
     animator.SetFloat("speed", Mathf.Abs(horizontalM));
 
-    if (Time.time > nextJump){
-        if (Input.GetButtonDown("Jump"))
-        {
-
-          jump = true;
-          animator.SetBool("jumping", true);
-          nextJump = Time.time + jumpCooldown;
-        }
+    if (Input.GetButtonDown("Jump"))
+    {
+      jump = true;
+      animator.SetBool("jumping", true);
     }
 
 
