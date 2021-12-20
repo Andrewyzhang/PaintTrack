@@ -3204,6 +3204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Endscrn: {fileID: 1680711701}
+  transition: {fileID: 0}
+  transitionTime: 1
 --- !u!61 &1238956287
 BoxCollider2D:
   m_ObjectHideFlags: 0

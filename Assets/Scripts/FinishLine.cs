@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
   public GameObject Endscrn;
+  public Animator transition;
+  public float transitionTime = 1f;
   private void OnTriggerEnter2D(Collider2D collision)
   {
     if (collision.gameObject.tag == "Player")
@@ -13,16 +16,9 @@ public class FinishLine : MonoBehaviour
       {
         FindObjectOfType<AudioManager>().Play("Complete", false);
         FindObjectOfType<AudioManager>().Stop("Theme");
-
-        StartCoroutine(delay());
+        FindObjectOfType<AudioManager>().Play("Post", false);
       }
       Endscrn.gameObject.SetActive(true);
     }
-  }
-
-  IEnumerator delay()
-  {
-    yield return new WaitForSeconds(2f);
-    FindObjectOfType<AudioManager>().Play("Post", false);
   }
 }

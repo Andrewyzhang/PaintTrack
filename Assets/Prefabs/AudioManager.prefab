@@ -98,6 +98,18 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Teleport
+    clip: {fileID: 8300000, guid: 5aeaa0328b8a94f74a0599feab6d512f, type: 3}
+    volume: 1
+    pitch: 1.76
+    loop: 0
+    source: {fileID: 0}
+  - name: Bounce
+    clip: {fileID: 8300000, guid: 9665cc150b93b4b638960b03d0b9f5b2, type: 3}
+    volume: 0.5
+    pitch: 1.3
+    loop: 0
+    source: {fileID: 0}
   minPitchValue: 0.7
   maxPitchValue: 1.3
   minVolumeValue: 0.8
