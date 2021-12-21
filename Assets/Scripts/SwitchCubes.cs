@@ -23,7 +23,7 @@ public class SwitchCubes : MonoBehaviour
   void Update()
   {
 
-    if (Input.GetKeyDown(KeyCode.X))
+    if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
     {
       SwitchCube();
       FindObjectOfType<AudioManager>().Play("Switch", true);
