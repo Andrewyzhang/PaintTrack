@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class FinishLine : MonoBehaviour
 {
   public GameObject Endscrn;
-  public Animator transition;
-  public float transitionTime = 1f;
   private void OnTriggerEnter2D(Collider2D collision)
   {
     if (collision.gameObject.tag == "Player")
